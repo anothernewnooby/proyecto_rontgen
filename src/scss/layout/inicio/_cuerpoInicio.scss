@@ -1,0 +1,100 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedorMain {
+    width: 100%;
+    height: 100vh;
+    background-color: v.$negro;
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedorTitulo {
+    width: 50%;
+    height: 100vh;
+    color: v.$blanco;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .subtitulo {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+
+        .barra {
+            width: 15rem;
+            height: 0.3rem;
+            background-color: v.$blanco;
+            margin-left: -21.5rem;
+            margin-right: 3rem;
+        }
+
+        p {
+            font-family: v.$fuentePrinciapl;
+            font-size: 3rem;
+            font-weight: 200;
+        }
+    }
+
+    .tituloP {
+        font-family: v.$fuentePrinciapl;
+        font-size: 8rem;
+        font-weight: 100;
+        margin-bottom: 7rem;
+    }
+}
+
+.contenedorTituloImagenes {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 7rem;
+}
+
+.contenedorTituloImagenes .contenedoresImg {
+    width: 20rem;
+    height: 65rem;
+    border: 1px solid v.$naranja;
+    margin-bottom: 7.5rem;
+    position: relative; /* Necesario para posicionar el pseudo-elemento correctamente */
+    overflow: hidden; /* Asegura que las imágenes no se salgan del contenedor */
+}
+
+.contenedorTituloImagenes .contenedoresImg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa oscura */
+    transition: opacity 0.3s ease-in-out; /* Transición suave para la opacidad */
+    z-index: 1; /* Coloca la capa oscura por encima de la imagen */
+}
+
+.contenedorTituloImagenes .contenedoresImg img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out; /* Añade una transición suave para el zoom */
+    position: relative; /* Necesario para mantener la imagen debajo del pseudo-elemento */
+    z-index: 0; /* Coloca la imagen debajo del pseudo-elemento */
+}
+
+.contenedorTituloImagenes .contenedoresImg:hover::before {
+    opacity: 0; /* La capa oscura desaparece al hacer hover */
+}
+
+.contenedorTituloImagenes .contenedoresImg img:hover {
+    transform: scale(1.05); /* Aplica una escala del 105% al hacer hover */
+}
+
+
+
+//* media queris 
+
