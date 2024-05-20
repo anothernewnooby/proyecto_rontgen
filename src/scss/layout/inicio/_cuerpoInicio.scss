@@ -4,13 +4,23 @@
 .contenedor-principal {
     min-height: 100vh;
     overflow: auto;
-  }
+}
 
 .contenedorMain {
     width: 100%;
     background-color: v.$negro;
     display: flex;
     flex-direction: row;
+}
+
+@media (min-width: 390px) and (max-width: 768px) {
+    .contenedorMain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 5rem;       
+    }
 }
 
 .contenedorTitulo {
@@ -66,6 +76,87 @@
     }
 }
 
+@media (min-width: 390px) and (max-width: 768px) {
+  .contenedorTitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    
+    
+    .tituloP{
+        font-size: 6rem;
+        line-height: 7rem;
+        margin-top: -45rem;
+    }
+    
+    .subtitulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .barra{
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+
+        p{
+            line-height: 5rem;
+            text-align: center;
+        }
+    }
+    
+  }
+}
+
+@media (min-width: 834px) and (max-width: 1024px) {
+    .contenedorTitulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    
+    
+    .tituloP{
+        font-size: 6rem;
+        line-height: 7rem;
+        margin-top: -45rem;
+    }
+    
+    .subtitulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .barra{
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+
+        p{
+            line-height: 5rem;
+            text-align: center;
+        }
+    }
+    
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .tituloP{
+    font-size: 6rem;
+    line-height: 10rem;
+  }
+}
+
+
+
+
 .contenedorTituloImagenes {
     width: 50%;
     
@@ -113,4 +204,16 @@
             opacity: 0; /* La capa oscura desaparece al hacer hover */
         }
     }
+}
+
+@media (min-width: 390px) and (max-width: 768px) {
+  .contenedorTituloImagenes{
+    display: none;
+  }
+}
+
+@media (min-width: 834px) and (max-width: 1024px) {
+    .contenedorTituloImagenes{
+        display: none;
+      }
 }
