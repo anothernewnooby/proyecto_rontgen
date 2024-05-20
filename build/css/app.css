@@ -432,7 +432,6 @@ img {
   flex-direction: row;
   gap: 7rem;
 }
-
 .contenedorTituloImagenes .contenedoresImg {
   width: 20rem;
   height: 65rem;
@@ -441,7 +440,6 @@ img {
   position: relative; /* Necesario para posicionar el pseudo-elemento correctamente */
   overflow: hidden; /* Asegura que las imágenes no se salgan del contenedor */
 }
-
 .contenedorTituloImagenes .contenedoresImg::before {
   content: "";
   position: absolute;
@@ -453,7 +451,6 @@ img {
   transition: opacity 0.3s ease-in-out; /* Transición suave para la opacidad */
   z-index: 1; /* Coloca la capa oscura por encima de la imagen */
 }
-
 .contenedorTituloImagenes .contenedoresImg img {
   width: 100%;
   height: 100%;
@@ -461,11 +458,9 @@ img {
   position: relative; /* Necesario para mantener la imagen debajo del pseudo-elemento */
   z-index: 0; /* Coloca la imagen debajo del pseudo-elemento */
 }
-
-.contenedorTituloImagenes .contenedoresImg:hover::before {
-  opacity: 0; /* La capa oscura desaparece al hacer hover */
-}
-
 .contenedorTituloImagenes .contenedoresImg img:hover {
   transform: scale(1.05); /* Aplica una escala del 105% al hacer hover */
+}
+.contenedorTituloImagenes .contenedoresImg:hover::before {
+  opacity: 0; /* La capa oscura desaparece al hacer hover */
 }
