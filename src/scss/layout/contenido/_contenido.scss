@@ -85,6 +85,7 @@
         align-items: center;
         flex-direction: column;
         width: 100%;
+        overflow: auto;
     }
 
     .contenidoTexto {
@@ -107,6 +108,8 @@
         align-items: center;
         flex-direction: column;
         width: 100%;
+        min-height: 100vh;
+        overflow: auto;
         padding-top: 6rem;
         padding-bottom: 2rem; /* Añadido padding-bottom para espacio adicional */
 
