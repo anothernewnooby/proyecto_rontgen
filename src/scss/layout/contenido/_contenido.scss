@@ -126,3 +126,7 @@
     }
 }
 
+css
+   .scrollable-element::-webkit-scrollbar {
+       display: block;
+   }
