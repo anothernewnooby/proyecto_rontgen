@@ -79,18 +79,12 @@
 }
 
 @media (min-width: 390px) and (max-width: 768px) {
-    css
-   .scrollable-element::-webkit-scrollbar {
-       display: block;
-   }
-
     .contenidoContenedor {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         width: 100%;
-        overflow: auto;
     }
 
     .contenidoTexto {
@@ -113,8 +107,6 @@
         align-items: center;
         flex-direction: column;
         width: 100%;
-        min-height: 100vh;
-        overflow: auto;
         padding-top: 6rem;
         padding-bottom: 2rem; /* Añadido padding-bottom para espacio adicional */
 
@@ -130,8 +122,3 @@
         }
     }
 }
-
-css
-   .scrollable-element::-webkit-scrollbar {
-       display: block;
-   }
