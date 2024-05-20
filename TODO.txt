@@ -1,0 +1,6 @@
+1 agregar favicom
+2 agregar media queris a:
+    navbar.scss
+    cuerpoinicio.scss
+3 cambiar el color de seleccion de la pagina a naranja
+5 realizar icono de la pagina

@@ -30,6 +30,11 @@
             background-color: v.$blanco;
             margin-left: -21.5rem;
             margin-right: 3rem;
+
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* Primer nivel de brillo */
+                        0 0 20px rgba(255, 255, 255, 0.6), /* Segundo nivel de brillo */
+                        0 0 30px rgba(255, 255, 255, 0.4);
+
         }
 
         p {
@@ -44,6 +49,16 @@
         font-size: 8rem;
         font-weight: 100;
         margin-bottom: 7rem;
+        
+        
+    }
+
+    .subtitulo,
+    .tituloP{
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* Primer nivel de brillo */
+                     0 0 20px rgba(255, 255, 255, 0.6), /* Segundo nivel de brillo */
+                     0 0 30px rgba(255, 255, 255, 0.4); /* Tercer nivel de brillo */
+        transition: 0.3s ease-in-out;
     }
 }
 
@@ -73,7 +88,7 @@
             height: 100%;
             background-color: rgba(0, 0, 0, 0.5); /* Capa oscura */
             transition: opacity 0.3s ease-in-out; /* Transición suave para la opacidad */
-            z-index: 1; /* Coloca la capa oscura por encima de la imagen */
+            z-index: 10; /* Coloca la capa oscura por encima de la imagen */
         }
 
         img {
