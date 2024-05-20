@@ -79,6 +79,11 @@
 }
 
 @media (min-width: 390px) and (max-width: 768px) {
+    css
+   .scrollable-element::-webkit-scrollbar {
+       display: block;
+   }
+
     .contenidoContenedor {
         display: flex;
         justify-content: center;
