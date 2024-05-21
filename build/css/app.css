@@ -777,3 +777,35 @@ img {
     font-size: 4rem;
   }
 }
+@media (min-width: 1100px) and (max-width: 1370px) {
+  .contenidoContenedor {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contenidoTexto p {
+    font-size: 6rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .separadorVertical {
+    display: none;
+  }
+  .contenidoCuadros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+  }
+  .contenidoCuadros .cuadro {
+    width: 90%;
+    height: 7rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  .contenidoCuadros .cuadro p {
+    font-size: 4rem;
+  }
+}
