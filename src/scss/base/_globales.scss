@@ -16,8 +16,14 @@ html{
 body{
     //font-family: v.$fuentePrincipal;
     overflow: auto; // Cambiado de hidden a auto
+    
     padding-top: 0;
 }
+
+main{
+    overflow-y: hidden;
+}
+
 
 h1{
     margin: 0 auto;
