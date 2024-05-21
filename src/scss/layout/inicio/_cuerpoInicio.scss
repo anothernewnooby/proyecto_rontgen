@@ -1,7 +1,6 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-
 .contenedorMain {
     width: 100%;
     background-color: v.$negro;
@@ -22,7 +21,6 @@
 
 .contenedorTitulo {
     width: 50%;
-   
     color: v.$blanco;
     display: flex;
     justify-content: center;
@@ -41,11 +39,9 @@
             background-color: v.$blanco;
             margin-left: -21.5rem;
             margin-right: 3rem;
-
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* Primer nivel de brillo */
-                        0 0 20px rgba(255, 255, 255, 0.6), /* Segundo nivel de brillo */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                        0 0 20px rgba(255, 255, 255, 0.6),
                         0 0 30px rgba(255, 255, 255, 0.4);
-
         }
 
         p {
@@ -60,118 +56,111 @@
         font-size: 8rem;
         font-weight: 100;
         margin-bottom: 7rem;
-        
-        
     }
 
     .subtitulo,
-    .tituloP{
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* Primer nivel de brillo */
-                     0 0 20px rgba(255, 255, 255, 0.6), /* Segundo nivel de brillo */
-                     0 0 30px rgba(255, 255, 255, 0.4); /* Tercer nivel de brillo */
+    .tituloP {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                     0 0 20px rgba(255, 255, 255, 0.6),
+                     0 0 30px rgba(255, 255, 255, 0.4);
         transition: 0.3s ease-in-out;
     }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-  .contenedorTitulo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    
-    
-    .tituloP{
-        font-size: 6rem;
-        line-height: 7rem;
-        margin-top: -45rem;
-    }
-    
-    .subtitulo{
-        display: flex;
+    .contenedorTitulo {
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        height: 100vh;
 
-        .barra{
-            margin: 0 auto;
-            margin-bottom: 2rem;
+        .tituloP {
+            font-size: 6rem;
+            line-height: 7rem;
+            text-align: center;
+            margin-bottom: 3rem;
         }
 
-        p{
-            line-height: 5rem;
-            text-align: center;
+        .subtitulo {
+            flex-direction: column;
+
+            .barra {
+                margin: 0 auto;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                line-height: 5rem;
+                text-align: center;
+            }
         }
     }
-    
-  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .contenedorTitulo{
-        display: flex;
+    .contenedorTitulo {
         justify-content: center;
         align-items: center;
-        flex-direction: column;
         height: 100vh;
         width: 100%;
-    
-    
-    .tituloP{
-        font-size: 6rem;
-        line-height: 7rem;
-        text-align: center;
-        
-    }
-    
-    .subtitulo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
 
-        .barra{
-            margin: 0 auto;
-            margin-bottom: 2rem;
-        }
-
-        p{
-            line-height: 5rem;
+        .tituloP {
+            font-size: 6rem;
+            line-height: 7rem;
             text-align: center;
         }
+
+        .subtitulo {
+            flex-direction: column;
+
+            .barra {
+                margin: 0 auto;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                line-height: 5rem;
+                text-align: center;
+            }
+        }
     }
-    
-  }
 }
 
-@media (min-width: 1280px) {
-    .tituloP{
-        font-size: 6rem;
-        line-height: 1rem;
+@media (min-width: 1100px) and (max-width: 1370px) {
+    .contenedorTitulo {
+        justify-content: center;
+        align-items: center;
+
+        .subtitulo {
+            flex-direction: column;
+
+            .barra {
+                margin: 0 auto;
+                margin-bottom: 4rem;
+            }
+        }
+
+        .tituloP {
+            font-size: 5.5rem;
+        }
     }
 }
 
-//* Contenedor Imagenes
 .contenedorTituloImagenes {
     width: 50%;
-    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 7rem;
-    margin-top: 8rem;
-    margin-bottom: 2rem;
-    
+    margin: 8rem 0 2rem;
 
     .contenedoresImg {
         width: 20rem;
         height: 65rem;
         border: 1px solid v.$naranja;
         margin-bottom: 7.5rem;
-        position: relative; /* Necesario para posicionar el pseudo-elemento correctamente */
-        overflow: hidden; /* Asegura que las imágenes no se salgan del contenedor */
+        position: relative;
+        overflow: hidden;
 
         &::before {
             content: "";
@@ -180,37 +169,51 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Capa oscura */
-            transition: opacity 0.3s ease-in-out; /* Transición suave para la opacidad */
-            z-index: 10; /* Coloca la capa oscura por encima de la imagen */
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: opacity 0.3s ease-in-out;
+            z-index: 10;
         }
 
         img {
             width: 100%;
             height: 100%;
-            transition: transform 0.3s ease-in-out; /* Añade una transición suave para el zoom */
-            position: relative; /* Necesario para mantener la imagen debajo del pseudo-elemento */
-            z-index: 0; /* Coloca la imagen debajo del pseudo-elemento */
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            z-index: 0;
 
             &:hover {
-                transform: scale(1.05); /* Aplica una escala del 105% al hacer hover */
+                transform: scale(1.05);
             }
         }
 
         &:hover::before {
-            opacity: 0; /* La capa oscura desaparece al hacer hover */
+            opacity: 0;
         }
     }
 }
 
 @media (min-width: 390px) and (max-width: 768px) {
-  .contenedorTituloImagenes{
-    display: none;
-  }
+    .contenedorTituloImagenes {
+        display: none;
+    }
 }
 
-@media (min-width: 834px) and (max-width: 1024px) {
-    .contenedorTituloImagenes{
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contenedorTituloImagenes {
         display: none;
-      }
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1370px) {
+    .contenedorTituloImagenes {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 3rem;
+        margin-bottom: -4rem;
+
+        .contenedoresImg {
+            width: 12rem;
+            height: 50rem;
+        }
+    }
 }
