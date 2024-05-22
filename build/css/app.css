@@ -312,6 +312,7 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   scroll-padding-top: 0rem;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -722,7 +723,7 @@ img {
 }
 .cuadro a {
   font-family: "Outfit", sans-serif;
-  font-size: 4.8rem;
+  font-size: 3.8rem;
   font-weight: 100;
   color: #252422;
   padding: 2rem;
