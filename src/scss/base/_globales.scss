@@ -16,6 +16,7 @@ html{
 body{
     //font-family: v.$fuentePrincipal;
     overflow: auto; // Cambiado de hidden a auto
+    background-color: v.$negro;
     
     padding-top: 0;
 }
@@ -45,4 +46,14 @@ img{
     width: 100%;
     height: auto;
     display: block;
+}
+
+::selection {
+    background: #EB5E28; /* Color de fondo de la selección */
+    color: #ffffff; /* Color del texto seleccionado */
+}
+
+::-moz-selection {
+    background: #EB5E28; /* Color de fondo de la selección */
+    color: #ffffff; /* Color del texto seleccionado */
 }

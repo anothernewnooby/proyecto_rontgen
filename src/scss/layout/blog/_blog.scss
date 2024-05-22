@@ -1,0 +1,129 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedorBlog{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    border-bottom: 1px solid v.$naranja;
+
+    background-color: #F8864F;
+  background: -moz-linear-gradient(-45deg, rgba(248,134,79,1) 0%, rgba(247,79,79,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(248,134,79,1)), color-stop(100%, rgba(247,79,79,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(248,134,79,1) 0%, rgba(247,79,79,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(248,134,79,1) 0%, rgba(247,79,79,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(248,134,79,1) 0%, rgba(247,79,79,1) 100%);
+  background: linear-gradient(135deg, rgba(248,134,79,1) 0%, rgba(247,79,79,1) 100%);
+
+    .contenedorBlogInterno{
+        width: 90%;
+        margin: 0 auto;        
+    }
+}
+
+.contenedorBlogTitulo{
+    width: 90%;
+    padding: 3rem;
+    color: v.$blanco;
+
+    h3{
+        font-family: v.$fuentePrinciapl;
+        font-size: 7rem;
+        font-weight: 800;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
+    p{
+        font-family: v.$fuentePrinciapl;
+        font-size: 4rem;
+        font-weight: 100    ;
+        line-height: 1;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+}
+
+.contenedorBlogTarjetas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+    
+    margin: 0 auto;
+    padding: 4rem;
+    width: 100%;
+
+    .tarjetaBlog{
+        background-color: v.$blanco;
+        box-shadow: 0px 0px 30px 10px 
+        rgba(0,0,0,0.2);
+        font-family: v.$fuentePrinciapl;
+        margin: 0 auto;
+        width: 35rem;
+        min-height: 50rem;
+        overflow: hidden;
+        
+    }
+
+    .contenedorBlog-img{
+        border-bottom: 0.6rem solid v.$separadosBlog;
+        height: 20rem;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    .tarjetaBlog-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: v.$fuenteBlog;
+        
+    }
+
+    p.tag{
+        font-family: v.$fuenteBlog;
+        font-size: 1.5rem;
+        color: v.$tagColor;
+        letter-spacing: 0.3rem;
+        margin-top: 2vh;
+        text-transform: uppercase;
+    }
+
+    h2{
+        font-family: v.$fuenteBlog;
+        font-size: 2.5rem;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .text{
+        font-family: v.$fuenteBlog;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin: 2rem auto;
+        text-align: center;
+        width: 85%;
+    }
+
+    a.read-more{
+        border: 2px solid #F8864F;
+        border-radius: 2.5rem;
+        color: v.$naranja;
+        cursor: pointer;
+        font-family: v.$fuenteBlog;
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-top: 0.5rem;
+        padding: 0.75rem 2.5rem;
+        transition: all .5s ease;
+
+        &:hover{
+            background-color: v.$naranja;
+            color: v.$blanco;
+            transform: scale(1.15)
+        }
+    }
+    
+}

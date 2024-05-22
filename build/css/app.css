@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -322,6 +323,7 @@ html {
 
 body {
   overflow: auto;
+  background-color: #252422;
   padding-top: 0;
 }
 
@@ -348,6 +350,16 @@ img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+::selection {
+  background: #EB5E28; /* Color de fondo de la selección */
+  color: #ffffff; /* Color del texto seleccionado */
+}
+
+::-moz-selection {
+  background: #EB5E28; /* Color de fondo de la selección */
+  color: #ffffff; /* Color del texto seleccionado */
 }
 
 .barraNavegacion {
@@ -808,4 +820,114 @@ img {
   .contenidoCuadros .cuadro p {
     font-size: 4rem;
   }
+}
+.contenedorBlog {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  border-bottom: 1px solid #EB5E28;
+  background-color: #F8864F;
+  background: -moz-linear-gradient(-45deg, rgb(248, 134, 79) 0%, rgb(247, 79, 79) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(248, 134, 79)), color-stop(100%, rgb(247, 79, 79)));
+  background: -webkit-linear-gradient(-45deg, rgb(248, 134, 79) 0%, rgb(247, 79, 79) 100%);
+  background: -o-linear-gradient(-45deg, rgb(248, 134, 79) 0%, rgb(247, 79, 79) 100%);
+  background: -ms-linear-gradient(-45deg, rgb(248, 134, 79) 0%, rgb(247, 79, 79) 100%);
+  background: linear-gradient(135deg, rgb(248, 134, 79) 0%, rgb(247, 79, 79) 100%);
+}
+.contenedorBlog .contenedorBlogInterno {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contenedorBlogTitulo {
+  width: 90%;
+  padding: 3rem;
+  color: #FFFCF2;
+}
+.contenedorBlogTitulo h3 {
+  font-family: "Outfit", sans-serif;
+  font-size: 7rem;
+  font-weight: 800;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+.contenedorBlogTitulo p {
+  font-family: "Outfit", sans-serif;
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.contenedorBlogTarjetas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  margin: 0 auto;
+  padding: 4rem;
+  width: 100%;
+}
+.contenedorBlogTarjetas .tarjetaBlog {
+  background-color: #FFFCF2;
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Outfit", sans-serif;
+  margin: 0 auto;
+  width: 35rem;
+  min-height: 50rem;
+  overflow: hidden;
+}
+.contenedorBlogTarjetas .contenedorBlog-img {
+  border-bottom: 0.6rem solid #F8864F;
+  height: 20rem;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.contenedorBlogTarjetas .tarjetaBlog-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.contenedorBlogTarjetas p.tag {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #898989;
+  letter-spacing: 0.3rem;
+  margin-top: 2vh;
+  text-transform: uppercase;
+}
+.contenedorBlogTarjetas h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.contenedorBlogTarjetas .text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin: 2rem auto;
+  text-align: center;
+  width: 85%;
+}
+.contenedorBlogTarjetas a.read-more {
+  border: 2px solid #F8864F;
+  border-radius: 2.5rem;
+  color: #EB5E28;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: 0.5rem;
+  padding: 0.75rem 2.5rem;
+  transition: all 0.5s ease;
+}
+.contenedorBlogTarjetas a.read-more:hover {
+  background-color: #EB5E28;
+  color: #FFFCF2;
+  transform: scale(1.15);
 }
