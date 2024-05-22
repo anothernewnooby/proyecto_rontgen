@@ -141,3 +141,15 @@
     width: 30rem;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contenedorBlogTarjetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .tarjetaBlog{
+    width: 30rem;
+  }
+}
