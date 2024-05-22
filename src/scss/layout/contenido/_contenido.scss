@@ -73,7 +73,7 @@
 
     a {
         font-family: v.$fuentePrinciapl;
-        font-size: 3.8rem;
+        font-size: 4.2rem;
         font-weight: 100;
         color: v.$negro;
         padding: 2rem;
@@ -123,8 +123,14 @@
             p {
                 font-size: 4rem;
             }
+
+            a{
+                font-size: 3.5rem;
+            }
         }
     }
+
+    
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

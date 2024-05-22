@@ -723,7 +723,7 @@ img {
 }
 .cuadro a {
   font-family: "Outfit", sans-serif;
-  font-size: 3.8rem;
+  font-size: 4.2rem;
   font-weight: 100;
   color: #252422;
   padding: 2rem;
@@ -765,6 +765,9 @@ img {
   }
   .contenidoCuadros .cuadro p {
     font-size: 4rem;
+  }
+  .contenidoCuadros .cuadro a {
+    font-size: 3.5rem;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
