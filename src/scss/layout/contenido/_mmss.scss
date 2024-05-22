@@ -1,0 +1,108 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedorMMSS {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    background-color: v.$negro;
+}
+
+.tituloMMSS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-family: v.$fuentePrinciapl;
+        font-size: 6rem;
+        font-weight: 700;
+        color: v.$blanco;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .tituloMMSS {
+    h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+  }
+}
+
+.contenedorDesplegablesMMSS {
+    width: 60%;
+    
+}
+
+.desplegable {
+    width: 100%;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 30px 10px 
+        rgba(0,0,0,0.2);
+
+    summary {
+        font-family: v.$fuentePrinciapl;
+        font-size: 3rem;
+        text-align: center;
+        cursor: pointer;
+        padding: 1rem;
+        background-color: v.$negro;
+        color: v.$blanco;
+        outline: none;
+        list-style: none;
+    }
+
+    summary:hover {
+        background-color: v.$negro;
+        color: v.$blanco;
+    }
+
+    &[open] {
+        summary {
+            background-color: v.$negro;
+        }
+
+        ul, p{            
+            text-align: center;
+            padding: 1rem;
+            margin: 0;
+            border-top: 1px solid v.$negro;
+
+            background-color: #F8864F;
+            background: -moz-linear-gradient(-45deg, rgba(248,134,79,1) 0%, rgba(247,79,79,1) 100%);
+            background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(248,134,79,1)), color-stop(100%, rgba(247,79,79,1)));
+            background: -webkit-linear-gradient(-45deg, rgba(248,134,79,1) 0%, rgba(247,79,79,1) 100%);
+            background: -o-linear-gradient(-45deg, rgba(248,134,79,1) 0%, rgba(247,79,79,1) 100%);
+            background: -ms-linear-gradient(-45deg, rgba(248,134,79,1) 0%, rgba(247,79,79,1) 100%);
+            background: linear-gradient(135deg, rgba(248,134,79,1) 0%, rgba(247,79,79,1) 100%);
+        }
+    }
+
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: v.$fuentePrinciapl;
+        font-size: 2rem;
+        color: v.$blanco;
+        text-decoration: none;
+        margin-bottom: 1.7rem;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        &:hover{
+            color: v.$negro;
+            transition: 0.3s ease-in-out;
+            scale: 1.05;
+        }
+    }
+}

@@ -50,7 +50,13 @@
 .cuadro {
     width: 45rem;
     height: 10rem;
-    background-color: v.$naranja;
+    background-color: #F8864F;
+    background: -moz-linear-gradient(-45deg, rgba(248,134,79,1) 0%, rgba(247,79,79,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(248,134,79,1)), color-stop(100%, rgba(247,79,79,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(248,134,79,1) 0%, rgba(247,79,79,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(248,134,79,1) 0%, rgba(247,79,79,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(248,134,79,1) 0%, rgba(247,79,79,1) 100%);
+    background: linear-gradient(135deg, rgba(248,134,79,1) 0%, rgba(247,79,79,1) 100%);
     margin-left: 25rem;
     margin-bottom: 5rem;
     display: flex; // Añadido para que justify-content y align-items funcionen
@@ -65,9 +71,9 @@
         transition: 0.3s;
     }
 
-    p {
+    a {
         font-family: v.$fuentePrinciapl;
-        font-size: 5rem;
+        font-size: 4.8rem;
         font-weight: 100;
         color: v.$negro;
         padding: 2rem;
@@ -75,6 +81,7 @@
 
         &:hover {
             transform: scale(1.1);
+            font-weight: 200;
             transition: 0.3s;
         }
     }
