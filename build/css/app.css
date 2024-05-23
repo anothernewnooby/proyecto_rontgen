@@ -1173,4 +1173,20 @@ img {
     margin: 0 auto;
     width: 65%;
   }
+  .enfoques-contenedor {
+    margin-bottom: 6rem;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1370px) {
+  .enfoques-contenedor,
+  .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 65%;
+  }
+  .enfoques-contenedor {
+    margin-bottom: 6rem;
+  }
 }
