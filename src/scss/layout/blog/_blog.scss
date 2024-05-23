@@ -145,7 +145,7 @@
   }
 
   .tarjetaBlog{
-    width: 30rem;
+    width: 25rem;
   }
 }
 
@@ -154,6 +154,10 @@
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+
+    tarjetaBlog{
+      width: 25rem;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -176,7 +180,7 @@
       }
     
       tarjetaBlog{
-        width: 30rem;
+        width: 25rem;
       }
   }
 }

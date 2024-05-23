@@ -961,7 +961,7 @@ img {
     flex-direction: column;
   }
   .tarjetaBlog {
-    width: 30rem;
+    width: 25rem;
   }
 }
 @media (max-width: 720px) {
@@ -969,6 +969,9 @@ img {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+  }
+  .contenedorBlogTarjetas tarjetaBlog {
+    width: 25rem;
   }
 }
 @media (max-width: 720px) and (min-width: 769px) and (max-width: 1024px) {
@@ -988,7 +991,7 @@ img {
     align-items: center;
   }
   tarjetaBlog {
-    width: 30rem;
+    width: 25rem;
   }
 }
 .contenedorMMSS {
