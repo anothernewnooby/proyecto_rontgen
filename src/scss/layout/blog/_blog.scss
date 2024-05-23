@@ -149,7 +149,7 @@
   }
 }
 
-@media (max-width: 720px){
+@media (width: 720px){
   .contenedorBlogTarjetas{
     display: grid;
     grid-template-columns: 1fr;
@@ -162,7 +162,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
-
+ 
   tarjetaBlog{
     width: 25rem;
   }
