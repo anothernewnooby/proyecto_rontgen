@@ -1090,6 +1090,10 @@ img {
   width: 50%;
 }
 
+.enfoques-contenedor {
+  margin-bottom: 6rem;
+}
+
 .titulo h1 {
   font-family: "Outfit", sans-serif;
   font-size: 5rem;
@@ -1158,5 +1162,15 @@ img {
   }
   .enfoques-tag-datos h2 {
     font-size: 1.8rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .enfoques-contenedor,
+  .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 65%;
   }
 }

@@ -10,6 +10,10 @@
     width: 50%;
 }
 
+.enfoques-contenedor{
+    margin-bottom: 6rem;
+}
+
 .titulo{
     h1{
         font-family: v.$fuentePrinciapl;
@@ -92,5 +96,27 @@
         h2{
             font-size: 1.8rem;
         }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .enfoques-contenedor,
+    .titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 65%;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1370px) {
+    .enfoques-contenedor,
+    .titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 65%;
     }
 }
