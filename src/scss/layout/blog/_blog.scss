@@ -36,7 +36,7 @@
     p{
         font-family: v.$fuentePrinciapl;
         font-size: 4rem;
-        font-weight: 100    ;
+        font-weight: 100;
         line-height: 1;
         margin: 0 auto;
         margin-bottom: 1rem;
@@ -149,15 +149,16 @@
   }
 }
 
-@media (max-width: 720px){
+@media (max-width: 720px) {
   .contenedorBlogTarjetas{
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+  }
 
-    tarjetaBlog{
-      width: 25rem;
-    }
+  .tarjetaBlog{
+    width: 25rem;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -167,22 +168,22 @@
     align-items: center;
   }
  
-  tarjetaBlog{
+  .tarjetaBlog{
     width: 25rem;
   }
 }
 
 @media (min-width: 1100px) and (max-width: 1370px) {
-    .contenedorBlogTarjetas{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-direction: column;
-       flex-wrap: wrap;
-      }
-    
-      tarjetaBlog{
-        width: 25rem;
-      }
+  .contenedorBlogTarjetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .tarjetaBlog{
+    width: 25rem;
   }
 }
