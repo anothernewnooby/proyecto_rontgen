@@ -986,9 +986,11 @@ img {
 }
 @media (max-width: 720px) and (min-width: 1100px) and (max-width: 1370px) {
   .contenedorBlogTarjetas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   tarjetaBlog {
     width: 25rem;
