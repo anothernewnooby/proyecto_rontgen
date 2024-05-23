@@ -129,17 +129,35 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
+  .contenedorBlog,
+  .contenedorBlogInterno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
   .contenedorBlogTarjetas{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    width: 100%;
   }
 
   .tarjetaBlog{
     width: 30rem;
+  }
+}
+
+@media (max-width: 720px){
+  .contenedorBlogTarjetas{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  tarjetaBlog{
+    width: 25rem;
   }
 }
 
