@@ -70,3 +70,20 @@
 
 
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .enfoques-contenedor,
+    .titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .enfoques-tag-datos{
+        h2{
+            font-size: 1.8rem;
+        }
+    }
+}
