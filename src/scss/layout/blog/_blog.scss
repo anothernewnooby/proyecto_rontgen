@@ -149,7 +149,7 @@
   }
 }
 
-@media (width: 720px){
+@media (max-width: 720px){
   .contenedorBlogTarjetas{
     display: grid;
     grid-template-columns: 1fr;
