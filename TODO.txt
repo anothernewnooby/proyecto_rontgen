@@ -1,6 +1,7 @@
 1 agregar favicom
-2 agregar media queris a:
+2 modificar media queris a 1366:
     navbar.scss
     cuerpoinicio.scss
-3 cambiar el color de seleccion de la pagina a naranja
+3 cambiar el color de hover a nav
 5 realizar icono de la pagina
+6 ajusta nav en una sola linea en mqm

@@ -1107,6 +1107,7 @@ img {
   padding-top: 4rem;
   margin-bottom: 2rem;
   color: #FFFCF2;
+  text-align: center;
 }
 
 .enfoques-tag-datos {
@@ -1154,6 +1155,7 @@ img {
   padding-right: 1rem;
 }
 .enfoques-tag-datos span {
+  font-size: 2rem;
   font-weight: 700;
 }
 
